@@ -1,0 +1,22 @@
+package com.enough.app.usermanager.listener;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.context.event.ApplicationFailedEvent;
+import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Component;
+
+/**
+ * @program: demo-app-parent
+ * @description:
+ * @author: lidong
+ * @create: 2019/01/23
+ */
+@Component
+public class ApplicationFailedEventListener implements ApplicationListener <ApplicationFailedEvent> {
+    private static Logger logger = LoggerFactory.getLogger(ApplicationFailedEventListener.class);
+    @Override
+    public void onApplicationEvent(ApplicationFailedEvent event) {
+        logger.debug("系统启动失败......");
+    }
+}

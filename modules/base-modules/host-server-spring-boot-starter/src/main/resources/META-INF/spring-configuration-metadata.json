@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "hostserver",
+      "type": "java.lang.String",
+      "sourceType": "com.enough.host.server.spring.boot.starter.autoconfigure.HostServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "hostserver.username",
+      "type": "java.lang.String",
+      "sourceType": "com.enough.host.server.spring.boot.starter.autoconfigure.HostServerProperties",
+      "description": "用户名",
+      "defaultValue": "admin"
+    },
+    {
+      "name": "hostserver.password",
+      "type": "java.lang.String",
+      "sourceType": "com.enough.host.server.spring.boot.starter.autoconfigure.HostServerProperties",
+      "description": "用户密码",
+      "defaultValue": "123"
+    }
+  ]
+
+  //  "hints":[{
+  //    "name":"hostserver.username",
+  //    "values":[{
+  //      "description":"用户名"
+  //    },{
+  //      "name": "hostserver.password",
+  //      "values": [{
+  //        "description": "用户密码"
+  //      }]
+  //    }]
+  //  }],
+}

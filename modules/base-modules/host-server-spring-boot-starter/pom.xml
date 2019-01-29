@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.enough</groupId>
+        <artifactId>base-modules</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.enough</groupId>
+    <artifactId>host-server-spring-boot-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>1.5.8.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>iserver-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>commons-utils-ugc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>iserver-processing</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>rest-sdk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>server-hosts</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>server-host-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>service-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.supermap.iserver</groupId>
+            <artifactId>iportal-all</artifactId>
+        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>com.supermap.iserver</groupId>-->
+        <!--<artifactId>ibase-jersey2-ext</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>com.supermap.iserver</groupId>-->
+        <!--<artifactId>ibase-jersey2-ext-shiro</artifactId>-->
+        <!--</dependency>-->
+    </dependencies>
+
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+
+</project>

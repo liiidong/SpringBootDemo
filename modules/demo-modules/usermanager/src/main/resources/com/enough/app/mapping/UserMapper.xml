@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.enough.app.usermanager.dao.UserDao">
+
+    <insert id="addUserInfo" parameterType="com.enough.app.usermanager.commontypes.UserInfo">
+        insert into userinfo values (#{id},#{name},#{password},#{role})
+    </insert>
+
+    <select id="getAllUserInfos" resultType="com.enough.app.usermanager.commontypes.UserInfo">
+        select * from userinfo
+    </select>
+
+    <select id="queruUserInfoById" resultType="com.enough.app.usermanager.commontypes.UserInfo">
+        select * from userinfo where id=#{id}
+    </select>
+
+    <delete id="delectUserInfo" parameterType="string">
+        delete from userinfo where id=#{id}
+    </delete>
+</mapper>
