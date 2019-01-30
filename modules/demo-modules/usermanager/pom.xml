@@ -155,7 +155,7 @@
                             <!-- 待处理的资源定义 -->
                             <resources>
                                 <resource>
-                                    <!-- 源文件位置：指定resources插件处理哪个目录下的资源文件 -->
+                                    <!-- 源+文件位置：指定resources插件处理哪个目录下的资源文件 -->
                                     <directory>src/main/resources/${package.environment}</directory>
                                     <filtering>false</filtering>
                                 </resource>
@@ -188,7 +188,7 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <package.environment>testbin</package.environment>
+                <package.environment>natives</package.environment>
             </properties>
         </profile>
     </profiles>

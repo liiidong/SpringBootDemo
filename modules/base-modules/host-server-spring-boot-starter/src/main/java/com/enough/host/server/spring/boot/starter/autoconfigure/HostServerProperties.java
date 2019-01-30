@@ -1,6 +1,7 @@
 package com.enough.host.server.spring.boot.starter.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
  * @create: 2019/01/24
  */
 @Component
+//@PropertySource("classpath:xxx.properties")   //指明配置文件
 @ConfigurationProperties(ignoreUnknownFields = false, prefix = "hostserver")
 public class HostServerProperties {
 
