@@ -13,7 +13,6 @@
         <groupId>com.enough</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.enough</groupId>
     <artifactId>usermanager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>usermanager</name>
@@ -23,7 +22,7 @@
     <properties>
         <java.version>1.8</java.version>
         <druid.version>1.1.9</druid.version>
-        <fastjson.version>1.2.23</fastjson.version>
+        <!--<fastjson.version>1.2.23</fastjson.version>-->
         <sqljdbc4.version>4.0</sqljdbc4.version>
         <mybatis.version>2.0.0</mybatis.version>
     </properties>
@@ -96,7 +95,6 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
         </dependency>
         <!--去除Jackson-->
         <dependency>
@@ -110,11 +108,11 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>druid</artifactId>-->
+            <!--<version>${druid.version}</version>-->
+        <!--</dependency>-->
         <dependency><!-- for sqlserver -->
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>sqljdbc4</artifactId>
@@ -172,7 +170,7 @@
                                 </resource>
                             </resources>
                         </configuration>
-                        <inherited></inherited>
+                        <inherited/>
                     </execution>
                 </executions>
             </plugin>
