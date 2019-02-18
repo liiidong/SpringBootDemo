@@ -18,8 +18,7 @@ public class ApplicationReadyEventListener implements ApplicationListener <Appli
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        System.out.println("启动成功");
-        logger.debug("启动成功");
+        logger.info("启动成功");
     }
 
 }

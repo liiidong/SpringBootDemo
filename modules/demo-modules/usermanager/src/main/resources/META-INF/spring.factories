@@ -1,0 +1,2 @@
+#org.springframework.context.ApplicationListener=com.enough.app.usermanager.listener.ApplicationReadyEventListener,com.enough.app.usermanager.listener.ApplicationFailedEventListener
+org.springframework.context.ApplicationContextAware=com.enough.app.usermanager.listener.DBStructListener

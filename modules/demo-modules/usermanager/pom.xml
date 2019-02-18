@@ -98,6 +98,17 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+        <!--去除Jackson-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-boot-starter-json</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>

@@ -21,8 +21,8 @@ public class UserInfo {
     public String password;
     public String role;
 
-//    @Override
-//    public String toString() {
-//        return "UserInfo{" + "name='" + name + '\'' + ", password='" + password + '\'' + ", role='" + role + '\'' + '}';
-//    }
+    @Override
+    public String toString() {
+        return "UserInfo{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", password='" + password + '\'' + ", role='" + role + '\'' + '}';
+    }
 }

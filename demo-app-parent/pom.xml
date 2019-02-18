@@ -46,16 +46,28 @@
     <prerequisites>
         <maven>3.1.0</maven>
     </prerequisites>
+
+    <!-- 打包时保存项目组内部的快照、项目组内部的发布版到该仓库-->
     <distributionManagement>
+        <!--<repository>-->
+        <!--<id>nx_releases</id>-->
+        <!--<name>Release Repository</name>-->
+        <!--<url>http://192.168.105.188:8001/nexus/content/repositories/releases/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+        <!--<id>nx_snapshots</id>-->
+        <!--<name>Snapshot Repository</name>-->
+        <!--<url>http://192.168.105.188:8001/nexus/content/repositories/snapshots/</url>-->
+        <!--</snapshotRepository>-->
         <repository>
-            <id>nx_releases</id>
-            <name>Release Repository</name>
-            <url>http://192.168.105.188:8001/nexus/content/repositories/releases/</url>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nx_snapshots</id>
-            <name>Snapshot Repository</name>
-            <url>http://192.168.105.188:8001/nexus/content/repositories/snapshots/</url>
+            <id>snapshots</id>
+            <name>Snapshots</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <!-- SuperMap相关 over-->
@@ -258,11 +270,22 @@
 
     </dependencies>
 
-    <repositories>
+    <repositories><!--依赖的jar包下载时需要的仓库-->
         <repository>
             <id>nexus</id>
             <name>Nexus</name>
             <url>http://192.168.105.188:8001/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>ld</id>
+            <name>ld-test</name>
+            <url>http://localhost:8081/nexus/content/repositories/ld/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -283,15 +306,34 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+            <id>ld</id>
+            <name>ld-test</name>
+            <url>http://localhost:8081/nexus/content/repositories/ld/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
     </pluginRepositories>
 
-    <!--<build>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
+
+    <!--使用spring-boot-devtools模块的应用，当classpath中的文件有改变时，会自动重启！
+                就是说，默认会监视classpath入口。静态资源和视图模板不需要重启！
+                注意，不同的IDE有不同的表现，例如Eclipse中只要改变了文件并保存，那就会导致classpath中的内容改变。
+                而Intellij IDEA则需要 Build #Make Project。-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
