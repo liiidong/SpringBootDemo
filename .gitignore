@@ -453,3 +453,9 @@ modules/base-modules/host-server-spring-boot-starter/target/classes/META-INF/spr
 /modules/modules.iml
 /.idea/
 /modules/base-modules/ugo-spring-boot-starter/ugo-spring-boot-starter.iml
+/modules/demo-modules/usermanager/mvnw.cmd
+/modules/demo-modules/usermanager/mvnw
+/modules/demo-modules/usermanager/.mvn
+/modules/demo-modules/usermanager/.mvn/wrapper/maven-wrapper.jar
+/modules/demo-modules/usermanager/mvnw
+/modules/demo-modules/usermanager/mvnw.cmd
