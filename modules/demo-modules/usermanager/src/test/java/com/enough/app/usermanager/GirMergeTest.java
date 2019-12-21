@@ -9,6 +9,7 @@ package com.enough.app.usermanager;
 public class GirMergeTest {
     public static void main(String[] args) {
         System.out.println("git test marge");
+        System.out.println("git test marge2");
         System.out.println("git master marge");
         System.out.println("git master marge2");
     }
