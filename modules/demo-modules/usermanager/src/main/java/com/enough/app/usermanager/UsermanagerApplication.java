@@ -1,5 +1,6 @@
 package com.enough.app.usermanager;
 
+import com.enough.app.usermanager.commontypes.UserInfo;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -32,6 +33,8 @@ public class UsermanagerApplication {
         //        File file = ResourceUtils.getFile("classpath:natives");
         //        addLibraryDir(file.getAbsolutePath());
         //        Workspace workspace = new Workspace();
+        UserInfo u = new UserInfo();
+
         System.out.println("test");
     }
 

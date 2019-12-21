@@ -447,3 +447,6 @@ modules/demo-modules/usermanager/src/main/resources/natives/EPSFont.xml
 modules/demo-modules/usermanager/src/main/resources/natives/CodeTransition.xml
 modules/demo-modules/usermanager/src/main/resources/natives/ChartConfig.xml
 modules/demo-modules/usermanager/src/main/resources/application.yml
+modules/base-modules/host-server-spring-boot-starter/target/classes/META-INF/spring-configuration-metadata.json
+/modules/base-modules/host-server-spring-boot-starter/*.iml
+/demo-app-parent/.idea
