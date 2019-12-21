@@ -36,38 +36,38 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>iserver-all</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>commons-utils-ugc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>iserver-processing</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>rest-sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>server-hosts</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>server-host-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>service-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.supermap.iserver</groupId>
-            <artifactId>iportal-all</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>iserver-all</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>commons-utils-ugc</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>iserver-processing</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>rest-sdk</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>server-hosts</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>server-host-model</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>service-model</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.supermap.iserver</groupId>-->
+<!--            <artifactId>iportal-all</artifactId>-->
+<!--        </dependency>-->
         <!--<dependency>-->
         <!--<groupId>com.supermap.iserver</groupId>-->
         <!--<artifactId>ibase-jersey2-ext</artifactId>-->

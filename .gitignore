@@ -450,3 +450,6 @@ modules/demo-modules/usermanager/src/main/resources/application.yml
 modules/base-modules/host-server-spring-boot-starter/target/classes/META-INF/spring-configuration-metadata.json
 /modules/base-modules/host-server-spring-boot-starter/*.iml
 /demo-app-parent/.idea
+/modules/modules.iml
+/.idea/
+/modules/base-modules/ugo-spring-boot-starter/ugo-spring-boot-starter.iml
