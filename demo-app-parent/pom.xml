@@ -74,7 +74,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <fastjson.version>1.2.23</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <druid.version>1.1.9</druid.version>
 
         <!-- geoPackage实现需要gt11.1版本及以上 -->
